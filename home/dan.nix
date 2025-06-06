@@ -17,6 +17,20 @@
   # changes in each release.
   home.stateVersion = "25.05";
 
+  #Allow home-manager to mess with bash alias
+  home.file.".bashrc".force = true;
+  #home-manager.backupFileExtension = "hm-backup";
+
+  
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
+
+
+  programs.bash = {
+   enable = true;
+   shellAliases = {
+    gs = "git status";
+    rebuild = "sudo nixos-rebuild switch --flake /etc/nixos#TheoNixos";
+   };
+  }; 
 }
