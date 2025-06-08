@@ -30,7 +30,7 @@
    enable = true;
    shellAliases = {
     gs = "git status";
-    rebuild = "sudo nixos-rebuild switch --flake /etc/nixos#TheoNixos";
+    nrebuild = "sudo nixos-rebuild switch --flake /etc/nixos\#TheoNixos";
    };
   }; 
 }

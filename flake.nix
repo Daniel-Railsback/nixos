@@ -20,7 +20,7 @@
         {
           home-manager.useUserPackages = true;
           home-manager.users.dan = import ./home/dan.nix;
-        }
+	}
       ];
     };
   };
