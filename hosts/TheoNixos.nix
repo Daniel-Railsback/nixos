@@ -3,10 +3,11 @@
 {
   imports = [
     ../hosts/hardware-configuration.nix
+#    ../modules/nvf.nix
   ];
 
   programs.dconf.enable = true;
-
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
@@ -44,6 +45,11 @@
     wofi
     git
     ripgrep
+    # ────────────────────────────
+    # Language-server binaries:
+    bash-language-server        # for bashls
+    python3Packages.python-lsp-server  # provides `pylsp`
+    nil    
   ];
 
   system.stateVersion = "25.05";
