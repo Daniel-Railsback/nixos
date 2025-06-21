@@ -42,13 +42,7 @@
 
 
     extraPackages = with pkgs.vimPlugins; [
-#      dracula-nvim        # Dracula theme
-#      telescope-nvim      # fuzzy finder
-#      nvim-tree-lua       # file-tree side pane
       nvim-web-devicons   # icons for the tree
- #     nvim-lspconfig      # LSP client configs
-  #    nvim-cmp            # completion engine
-   #   cmp-nvim-lsp        # LSP source for cmp
       cmp-buffer          # buffer source for cmp
       cmp-path            # path source for cmp
     ];

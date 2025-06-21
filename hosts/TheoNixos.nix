@@ -3,7 +3,6 @@
 {
   imports = [
     ../hosts/hardware-configuration.nix
-#    ../modules/nvf.nix
   ];
 
   programs.dconf.enable = true;
@@ -45,6 +44,8 @@
     wofi
     git
     ripgrep
+    neofetch
+    sway
     # ────────────────────────────
     # Language-server binaries:
     bash-language-server        # for bashls
