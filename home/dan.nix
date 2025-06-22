@@ -25,6 +25,11 @@
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 
+  programs.git = {
+    enable = true;
+    userName = "Daniel-Railsback";
+    userEmail = "drailsback@healthrise.com";
+  };
 
   programs.neovim = {
     enable       = true;
